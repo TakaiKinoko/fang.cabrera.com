@@ -21,13 +21,13 @@ const SkipToContent = styled.a`
   overflow: hidden;
   z-index: -99;
   &:hover {
-    background-color: ${colors.darkGrey};
+    background-color: ${colors.pyellow};
   }
   &:focus,
   &:active {
     outline: 0;
-    color: ${colors.green};
-    background-color: ${colors.lightNavy};
+    color: ${colors.pyellow};
+    background-color: ${colors.pbeige};
     border-radius: ${theme.borderRadius};
     padding: 18px 23px;
     font-size: ${fontSizes.small};

@@ -1,19 +1,19 @@
 ---
 title: 'About Me'
-avatar: './me.jpg'
+avatar: './Fang.jpg'
 skills:
-  - JavaScript (ES6+)
-  - HTML & (S)CSS
-  - React
-  - Vue
-  - Node.js
-  - Express
-  - GraphQL
-  - NativeScript
+  - Java
+  - Python
+  - Scala
+  - C
+  - CUDA
+  - SQL
+  - OCaml
+  - Spark
 ---
 
-Hello! I'm Brittany, a software engineer based in Boston, MA who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.
+Hello! I'm Fang, a software engineer based in New York, NY.
 
-Shortly after graduating from [Northeastern University](https://www.ccis.northeastern.edu/), I joined the engineering team at [Upstatement](https://www.upstatement.com/) where I work on a wide variety of interesting and meaningful projects on a daily basis.
+Prior to my life at NYU Courant, I studied Chinese Language and Literature at [Peking University](http://english.pku.edu.cn/), and then violin with [Naoko Tanaka](https://www.juilliard.edu/music/faculty/tanaka-naoko) and viola with [Karen Ritscher](https://www.msmnyc.edu/faculty/karen-ritscher/).
 
 Here are a few technologies I've been working with recently:

@@ -68,7 +68,7 @@ const Tab = styled.button`
   white-space: nowrap;
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.smallish};
-  color: ${props => (props.isActive ? colors.green : colors.lightGrey)};
+  color: ${props => (props.isActive ? colors.nichijousalmon : colors.pbeige)};
   ${media.tablet`padding: 0 15px 2px;`};
   ${media.thone`
     ${mixins.flexCenter};
@@ -80,12 +80,12 @@ const Tab = styled.button`
   `};
   &:hover,
   &:focus {
-    background-color: ${colors.lightNavy};
+    background-color: ${colors.pteal};
   }
 `;
 const Highlighter = styled.span`
   display: block;
-  background: ${colors.green};
+  background: ${colors.nichijousalmon};
   width: 2px;
   height: ${theme.tabHeight}px;
   border-radius: ${theme.borderRadius};
@@ -145,7 +145,7 @@ const TabContent = styled.div`
         content: '▹';
         position: absolute;
         left: 0;
-        color: ${colors.green};
+        color: ${colors.pteal};
         line-height: ${fontSizes.xlarge};
       }
     }
@@ -182,7 +182,7 @@ const Jobs = ({ data }) => {
 
   return (
     <JobsContainer id="jobs" ref={revealContainer}>
-      <Heading>Where I&apos;ve Worked</Heading>
+      <Heading>CS Courses I&apos;ve Taken</Heading>
       <TabsContainer>
         <Tabs role="tablist">
           {data &&
@@ -220,9 +220,8 @@ const Jobs = ({ data }) => {
                   aria-labelledby={`job${i}`}
                   aria-hidden={activeTabId !== i}>
                   <JobTitle>
-                    <span>{title}</span>
                     <Company>
-                      <span>&nbsp;@&nbsp;</span>
+                      <span>&nbsp;</span>
                       <a href={url} target="_blank" rel="nofollow noopener noreferrer">
                         {company}
                       </a>

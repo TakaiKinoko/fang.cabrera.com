@@ -1,5 +1,17 @@
 const theme = {
   colors: {
+    pback: '#2C363F',
+    pyellow: '#E5BD47',
+    pbeige: '#DCDCDD',
+    pteal: '#2F6665',
+    plightyellow: '#f7dc6f',
+    nichijougrey: '#3f474e',
+    nichijoupink: '#ec9c9c',
+    nichijousalmon: '#e47c7c',
+    nichijouteal: '#25b4a4',
+    nichijoulightteal: '#9cc4c1',
+    salmon: '#FF5733',
+    wine: '#4A001B',
     dark: '#000007',
     darkestNavy: '#01050b',
     darkNavy: '#020c1b',

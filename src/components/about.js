@@ -34,22 +34,22 @@ const Skill = styled.li`
   margin-bottom: 10px;
   padding-left: 20px;
   font-family: ${fonts.SFMono};
-  font-size: ${fontSizes.smallish};
-  color: ${colors.slate};
+  font-size: ${fontSizes.small};
+  color: ${colors.nichijouteal};
   &:before {
     content: '▹';
     position: absolute;
     left: 0;
-    color: ${colors.green};
+    color: ${colors.nichijousalmon};
     font-size: ${fontSizes.small};
-    line-height: 12px;
+    line-height: 14px;
   }
 `;
 const PicContainer = styled.div`
   position: relative;
   width: 40%;
-  max-width: 300px;
-  margin-left: 60px;
+  max-width: 550px;
+  margin-left: 50px;
   ${media.tablet`margin: 60px auto 0;`};
   ${media.phablet`width: 70%;`};
 `;
@@ -65,7 +65,7 @@ const AvatarContainer = styled.a`
   width: 100%;
   position: relative;
   border-radius: ${theme.borderRadius};
-  background-color: ${colors.green};
+  background-color: ${colors.pbeige};
   margin-left: -20px;
   &:hover,
   &:focus {
@@ -98,7 +98,7 @@ const AvatarContainer = styled.a`
     mix-blend-mode: screen;
   }
   &:after {
-    border: 2px solid ${colors.green};
+    border: 2px solid ${colors.nichijousalmon};
     top: 20px;
     left: 20px;
     z-index: -1;

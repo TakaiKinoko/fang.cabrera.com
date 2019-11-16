@@ -17,7 +17,7 @@ const HeroContainer = styled(Section)`
   }
 `;
 const Hi = styled.h1`
-  color: ${colors.green};
+  color: ${colors.pbeige};
   margin: 0 0 20px 3px;
   font-size: ${fontSizes.medium};
   font-family: ${fonts.SFMono};
@@ -35,9 +35,9 @@ const Name = styled.h2`
   ${media.phone`font-size: 40px;`};
 `;
 const Subtitle = styled.h3`
-  font-size: 80px;
+  font-size: 70px;
   line-height: 1.1;
-  color: ${colors.slate};
+  color: ${colors.pbeige};
   ${media.desktop`font-size: 70px;`};
   ${media.tablet`font-size: 60px;`};
   ${media.phablet`font-size: 50px;`};

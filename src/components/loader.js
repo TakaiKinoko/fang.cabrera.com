@@ -44,13 +44,14 @@ const Loader = ({ finishLoading }) => {
     });
 
     loader
+      /*   delete stroked polygon
       .add({
-        targets: '#logo path',
+        targets: '#logo #Outline',
         delay: 500,
         duration: 2000,
         easing: 'easeInOutQuart',
         strokeDashoffset: [anime.setDashoffset, 0],
-      })
+      }) */
       .add({
         targets: '#logo #B',
         duration: 800,
