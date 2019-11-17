@@ -39,6 +39,10 @@ module.exports = {
       name: 'Contact',
       url: '/#contact',
     },
+    {
+      name: 'Performance',
+      url: '/#performance',
+    },
   ],
 
   navHeight: 100,

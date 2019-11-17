@@ -10,6 +10,7 @@ skills:
   - SQL
   - OCaml
   - Spark
+
 ---
 
 Hello! I'm Fang, a software engineer based in New York, NY.

@@ -105,6 +105,7 @@ const AvatarContainer = styled.a`
   }
 `;
 
+
 const About = ({ data }) => {
   const { frontmatter, html } = data[0].node;
   const { title, skills, avatar } = frontmatter;
