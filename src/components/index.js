@@ -5,7 +5,7 @@ import Featured from './featured';
 import Footer from './footer';
 import Head from './head';
 import Hero from './hero';
-import Jobs from './jobs';
+import Courseworks from './courseworks';
 import Layout from './layout';
 import Loader from './loader';
 import Menu from './menu';
@@ -22,7 +22,7 @@ export {
   Footer,
   Head,
   Hero,
-  Jobs,
+  Courseworks,
   Layout,
   Loader,
   Menu,

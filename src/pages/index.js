@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout, Hero, About, Jobs, Featured, Projects, Contact, Performance } from '@components';
+import { Layout, Hero, About, Courseworks, Featured, Projects, Contact, Performance } from '@components';
 import styled from 'styled-components';
 import { mixins, Main } from '@styles';
 
@@ -15,11 +15,11 @@ const IndexPage = ({ location, data }) => (
     <MainContainer id="content">
       <Hero data={data.hero.edges} />
       <About data={data.about.edges} />
-      <Jobs data={data.jobs.edges} />
+      <Courseworks data={data.jobs.edges} />
       <Featured data={data.featured.edges} />
       <Projects data={data.projects.edges} />
-      <Contact data={data.contact.edges} />
       <Performance data={data.performance.edges} />
+      <Contact data={data.contact.edges} />
     </MainContainer>
   </Layout>
 );
@@ -65,7 +65,7 @@ export const pageQuery = graphql`
       }
     }
     jobs: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/jobs/" } }
+      filter: { fileAbsolutePath: { regex: "/courseworks/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -123,7 +123,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    contact: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/contact/" } }) {
+    performance: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/performance/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+      ) {
       edges {
         node {
           frontmatter {
@@ -133,7 +136,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    performance: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/performance/" } }) {
+    contact: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/contact/" } }) {
       edges {
         node {
           frontmatter {

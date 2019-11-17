@@ -10,7 +10,7 @@ const FooterContainer = styled.footer`
   ${mixins.flexCenter};
   flex-direction: column;
   padding: 15px;
-  background-color: ${colors.darkNavy};
+  background-color: ${colors.pback};
   color: ${colors.slate};
   text-align: center;
   height: auto;
@@ -88,7 +88,7 @@ const Footer = ({ githubInfo }) => (
         href="https://github.com/bchiang7/v4"
         target="_blank"
         rel="nofollow noopener noreferrer">
-        <div>Site design inspired by Brittany Chiang</div>
+        <div>Site design inspired by @bchiang7</div>
       </GithubLink>
     </Copy>
   </FooterContainer>

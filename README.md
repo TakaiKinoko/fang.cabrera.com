@@ -1,4 +1,6 @@
-## 🛠 Installation & Set Up
+## Fang's Personal Website
+
+## Installation & Set Up
 
 1. Install the Gatsby CLI
 
@@ -24,7 +26,7 @@
    npm start
    ```
 
-## 🚀 Building and Running for Production
+## Building and Running for Production
 
 1. Generate a full static production build
 
@@ -38,7 +40,7 @@
    npm run serve
    ```
 
-## 🎨 Color Reference
+## Color Reference
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
@@ -51,5 +53,5 @@
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
 | Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
 
-## 🚨 Credit to: 
- https://brittanychiang.com. Refer to this handy [quora post](https://www.quora.com/Is-it-bad-to-copy-other-peoples-code) if you're not sure what to do. Thanks!
+## Credit to: 
+ https://brittanychiang.com. 

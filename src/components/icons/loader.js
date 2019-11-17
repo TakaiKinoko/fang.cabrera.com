@@ -5,7 +5,7 @@ const IconLoader = () => (
     <title>Loader Logo</title>
     <g id="Page-1" fill="none" fill-rule="evenodd">
       <g id="048---Petroleum-Solvent-Only" fill-rule="nonzero">
-        <g id="B" transform="translate(1 1)">
+        <g id="color" transform="translate(1 1)">
           <circle id="Oval" cx="29" cy="29" fill="#ff9801" r="29" />
           <path
             id="Shape"
@@ -56,6 +56,7 @@ const IconLoader = () => (
       </g>
     </g>
   </svg>
+  
 );
 
 export default IconLoader;

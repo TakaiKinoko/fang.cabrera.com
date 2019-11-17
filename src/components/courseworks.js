@@ -175,13 +175,13 @@ const JobDetails = styled.h5`
   }
 `;
 
-const Jobs = ({ data }) => {
+const Courseworks = ({ data }) => {
   const [activeTabId, setActiveTabId] = useState(0);
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
   return (
-    <JobsContainer id="jobs" ref={revealContainer}>
+    <JobsContainer id="courseworks" ref={revealContainer}>
       <Heading>CS Courses I&apos;ve Taken</Heading>
       <TabsContainer>
         <Tabs role="tablist">
@@ -209,7 +209,7 @@ const Jobs = ({ data }) => {
           {data &&
             data.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const {url, company, range } = frontmatter;
               return (
                 <TabContent
                   key={i}
@@ -240,8 +240,8 @@ const Jobs = ({ data }) => {
   );
 };
 
-Jobs.propTypes = {
+Courseworks.propTypes = {
   data: PropTypes.array.isRequired,
 };
 
-export default Jobs;
+export default Courseworks;

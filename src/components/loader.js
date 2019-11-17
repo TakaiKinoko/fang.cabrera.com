@@ -9,7 +9,7 @@ const { colors } = theme;
 
 const LoaderContainer = styled.div`
   ${mixins.flexCenter};
-  background-color: ${colors.darkNavy};
+  background-color: ${colors.pback};
   position: fixed;
   width: 100%;
   height: 100%;
@@ -44,24 +44,24 @@ const Loader = ({ finishLoading }) => {
     });
 
     loader
-      /*   delete stroked polygon
+      /* delete stroked polygon
       .add({
         targets: '#logo #Outline',
         delay: 500,
         duration: 2000,
         easing: 'easeInOutQuart',
         strokeDashoffset: [anime.setDashoffset, 0],
-      }) */
+      })*/ 
       .add({
-        targets: '#logo #B',
+        targets: '#logo',
         duration: 800,
         easing: 'easeInOutQuart',
         opacity: 1,
       })
       .add({
-        targets: '#logo',
+        targets: '#logo #color',
         delay: 700,
-        duration: 300,
+        duration: 200,
         easing: 'easeInOutQuart',
         opacity: 0,
         scale: 0.1,

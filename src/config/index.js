@@ -29,19 +29,19 @@ module.exports = {
     },
     {
       name: 'Courseworks',
-      url: '/#jobs',
+      url: '/#courseworks',
     },
     {
       name: 'Projects',
       url: '/#projects',
     },
     {
-      name: 'Contact',
-      url: '/#contact',
+      name: 'Performances',
+      url: '/#performance',
     },
     {
-      name: 'Performance',
-      url: '/#performance',
+      name: 'Contact',
+      url: '/#contact',
     },
   ],
 
