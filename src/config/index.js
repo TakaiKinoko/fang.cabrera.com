@@ -2,14 +2,14 @@ module.exports = {
   siteTitle: 'Fang Cabrera | Software Engineer',
   siteDescription:
     'Fang Cabrera is a software engineer based in New York, NY who has a penchant for functional programming and NLP.',
-  siteKeywords: 'Fang Cabrera, TakaiKinoko, Fang Han, software engineer, NYU, Courant',
+  siteKeywords: 'Fang Cabrera, TakaiKinoko, software engineer, NYU, Courant',
   siteUrl: 'https://fangcabrera.com',
   siteLanguage: 'en_US',
   //googleAnalyticsID: 'UA-45666519-2',
   //googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
   name: 'Fang Cabrera',
   location: 'New York, NY',
-  email: 'fang.cabrera@gmail.com',
+  email: 'fang@buymecoffee.co',
   github: 'https://github.com/TakaiKinoko',
   socialMedia: [
     {
