@@ -5,7 +5,8 @@ range: 'Fall 2019'
 url: 'https://cs.nyu.edu/courses/fall19/CSCI-GA.3033-008/'
 ---
 
-**What I learnt**: 
+_What I learnt_:
+
 - Language Models
 - Naive Bayes and Maximum Entropy Model
 - Conditional Random Fields and Hidden Markov Model
@@ -16,7 +17,8 @@ url: 'https://cs.nyu.edu/courses/fall19/CSCI-GA.3033-008/'
 - Machine Translation
 - Parsing
 
-**Sample Works**: 
+_Sample Works_:
+
 - Handcrafted MaxEnt Classifier in Python
 - Experiment with FastText for Word Embiddings
 - NER with HMM and Viterbi algorithm in Python

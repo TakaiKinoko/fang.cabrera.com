@@ -1,7 +1,16 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout, Hero, About, Courseworks, Featured, Projects, Contact, Performance } from '@components';
+import {
+  Layout,
+  Hero,
+  About,
+  Courseworks,
+  Featured,
+  Projects,
+  Contact,
+  Performance,
+} from '@components';
 import styled from 'styled-components';
 import { mixins, Main } from '@styles';
 
@@ -73,7 +82,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             company
-            location
             range
             url
           }
@@ -126,7 +134,7 @@ export const pageQuery = graphql`
     performance: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/performance/" } }
       sort: { fields: [frontmatter___date], order: DESC }
-      ) {
+    ) {
       edges {
         node {
           frontmatter {

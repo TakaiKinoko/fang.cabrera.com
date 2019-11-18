@@ -1,10 +1,24 @@
 ---
 date: '2019-01-01'
-title: 'Software Engineer Co-op'
 company: 'Compiler Construction'
-location: 'Boston, MA'
 range: 'Spring 2019'
-url: 'https://www.apple.com/music/'
+url: 'https://cs.nyu.edu/courses/spring19/CSCI-GA.2130-001/'
 ---
 
-- language
+_What I learnt_:
+
+- lexical analysis
+- top-down syntax analysis
+- syntax-directed translation
+- syntax-directed definitions and type analysis
+- intermediate code generation
+- runtime environment
+- code generation
+- register allocation
+- bottom-up analysis and optimization
+
+_Sample Works_
+
+- parser in HACS
+- type checker in HACS
+- MinARM32 code generator in HACS

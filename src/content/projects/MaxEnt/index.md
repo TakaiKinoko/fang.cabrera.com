@@ -2,7 +2,7 @@
 date: '2019-09'
 title: 'Handcrafted MaxEnt Classifier'
 image: ''
-github: 'https://github.com/bchiang7/spotify-top-tracks-2017'
+github: ''
 external: ''
 tech:
   - Python
@@ -10,4 +10,4 @@ tech:
 show: 'true'
 ---
 
-...
+MaxEnt Proper Name Classifiers which attempt to classify proper names on the basis of their surface strings alone. Performance is boosted to >= 80% with handcrafted feature engineering and hyperparameter tuning.

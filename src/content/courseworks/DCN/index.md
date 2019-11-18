@@ -1,12 +1,16 @@
 ---
 date: '2018-09-01'
-title: 'Engineer'
 company: 'Data Communications and Networks'
-professor: 'Spencor'
-location: 'Boston, MA'
 range: 'Fall 2018'
-url: 'https://www.upstatement.com/'
+url: 'https://www.nyu.edu/classes/jcf/CSCI-GA.2262-001/'
 ---
 
-- what I learned
-- sample work
+_What I Learned_
+
+- network stack
+- application layer
+- transport layer
+- network player
+- link layer
+- physical layer
+- wireless networks

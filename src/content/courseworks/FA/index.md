@@ -1,12 +1,18 @@
 ---
 date: '2018-01-01'
-title: 'Engineer'
 company: 'Fundamental Algorithms'
-professor: 'Spencor'
-location: 'Boston, MA'
 range: 'Spring 2018'
-url: 'https://www.upstatement.com/'
+url: ''
 ---
 
-- what I learned
-- sample work
+_What I Learned_
+
+- growth of functions
+- heap, queue, stack
+- sorting
+- hashing
+- BST
+- greedy algorithm
+- dynamic programming
+- graphs
+- number theory

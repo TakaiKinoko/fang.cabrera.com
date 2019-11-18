@@ -1,12 +1,18 @@
 ---
 date: '2019-09-01'
-title: 'Engineer'
 company: 'Database System'
-professor: 'Spencor'
-location: 'Boston, MA'
 range: 'Fall 2019'
-url: 'https://www.upstatement.com/'
+url: 'https://cs.nyu.edu/courses/fall19/CSCI-GA.2433-001/'
 ---
 
-- what I learned
-- sample work
+_What I learnt_:
+
+- principled schema design
+- data structures for large data
+- relational database query languages
+
+_Sample Works_:
+
+- computing minimal equivalent set of functional dependencies
+- database using in-memory implementation of B-trees and hash structures
+- a miniature relational database with order

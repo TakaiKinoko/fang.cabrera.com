@@ -1,12 +1,19 @@
 ---
 date: '2019-01-01'
-title: 'Engineer'
 company: 'Machine Learning'
-professor: 'Spencor'
-location: 'Boston, MA'
 range: 'Spring 2019'
-url: 'https://www.upstatement.com/'
+url: 'https://cs.nyu.edu/courses/spring19/CSCI-GA.2565-001/'
 ---
 
-- what I learned
-- sample work
+_What I learnt_:
+
+- supervised learning
+- regularization
+- generalized linear models
+- trees and forests
+- neural networks
+- latent variable models
+- sampling and variatinal inference
+- deep generative models
+- causal inference
+- reinforcement learning
