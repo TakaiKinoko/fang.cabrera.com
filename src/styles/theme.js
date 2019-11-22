@@ -50,6 +50,7 @@ const theme = {
   },
 
   fontSizes: {
+    footer_tiny: '10px',
     xsmall: '12px',
     smallish: '13px',
     small: '14px',

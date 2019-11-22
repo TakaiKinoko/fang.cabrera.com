@@ -41,8 +41,10 @@ const Copy = styled.div`
   line-height: 1;
 `;
 const GithubLink = styled.a`
-  color: ${colors.slate};
+  color: ${colors.grey};
+  font-size: ${fontSizes.footer_tiny};
 `;
+/*
 const GithubInfo = styled.div`
   margin-top: 10px;
 
@@ -58,8 +60,10 @@ const GithubInfo = styled.div`
     margin-right: 5px;
   }
 `;
+*/
 
-const Footer = ({ githubInfo }) => (
+//const Footer = ({ GithubInfo  }) => (
+const Footer = () => (
   <FooterContainer>
     <SocialContainer>
       <SocialItemList>
@@ -88,7 +92,17 @@ const Footer = ({ githubInfo }) => (
         href="https://github.com/bchiang7/v4"
         target="_blank"
         rel="nofollow noopener noreferrer">
-        <div>Site design inspired by @bchiang7</div>
+        <div>site design inspired by @bchiang7</div>
+        <div>
+          logo made by{' '}
+          <a href="https://www.flaticon.com/authors/freepik" title="freepik">
+            freepik
+          </a>{' '}
+          from{' '}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            flaticon
+          </a>
+        </div>
       </GithubLink>
     </Copy>
   </FooterContainer>
