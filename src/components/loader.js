@@ -44,24 +44,72 @@ const Loader = ({ finishLoading }) => {
     });
 
     loader
-      /* delete stroked polygon
+      /*
       .add({
-        targets: '#logo #Outline',
+        targets: '#heart',
         delay: 500,
-        duration: 2000,
+        duration: 600,
         easing: 'easeInOutQuart',
         strokeDashoffset: [anime.setDashoffset, 0],
-      })*/ 
+      })*/
       .add({
         targets: '#logo',
-        duration: 800,
+        duration: 600,
         easing: 'easeInOutQuart',
         opacity: 1,
       })
       .add({
-        targets: '#logo #color',
-        delay: 700,
-        duration: 200,
+        targets: '#logo #top',
+        delay: 150,
+        duration: 75,
+        easing: 'easeInOutQuart',
+        opacity: 0,
+        scale: 0.1,
+      })
+      .add({
+        targets: '#logo #left_piece',
+        delay: 200,
+        duration: 100,
+        easing: 'easeInOutQuart',
+        opacity: 0,
+        scale: 0.1,
+      })
+      .add({
+        targets: '#logo #midleft_piece',
+        delay: 150,
+        duration: 75,
+        easing: 'easeInOutQuart',
+        opacity: 0,
+        scale: 0.1,
+      })
+      .add({
+        targets: '#logo #midright_piece',
+        delay: 150,
+        duration: 75,
+        easing: 'easeInOutQuart',
+        opacity: 0,
+        scale: 0.1,
+      })
+      .add({
+        targets: '#logo #right_piece',
+        delay: 200,
+        duration: 100,
+        easing: 'easeInOutQuart',
+        opacity: 0,
+        scale: 0.1,
+      })
+      .add({
+        targets: '#logo #bottom',
+        delay: 150,
+        duration: 75,
+        easing: 'easeInOutQuart',
+        opacity: 0,
+        scale: 0.1,
+      })
+      .add({
+        targets: '#logo #heart',
+        delay: 800,
+        duration: 600,
         easing: 'easeInOutQuart',
         opacity: 0,
         scale: 0.1,
