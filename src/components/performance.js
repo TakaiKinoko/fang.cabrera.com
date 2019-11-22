@@ -18,101 +18,7 @@ const TabsContainer = styled.div`
     display: block;
   `};
 `;
-const Tabs = styled.ul`
-  display: block;
-  position: relative;
-  width: max-content;
-  z-index: 3;
-  ${media.thone`
-    display: flex;
-    overflow-x: scroll;
-    margin-bottom: 30px;
-    width: calc(100% + 100px);
-    margin-left: -50px;
-  `};
-  ${media.phablet`
-    width: calc(100% + 50px);
-    margin-left: -25px;
-  `};
 
-  li {
-    &:first-of-type {
-      ${media.thone`
-        margin-left: 50px;
-      `};
-      ${media.phablet`
-        margin-left: 25px;
-      `};
-    }
-    &:last-of-type {
-      ${media.thone`
-        padding-right: 50px;
-      `};
-      ${media.phablet`
-        padding-right: 25px;
-      `};
-    }
-  }
-`;
-const Tab = styled.button`
-  ${mixins.link};
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: transparent;
-  height: ${theme.tabHeight}px;
-  padding: 0 20px 2px;
-  transition: ${theme.transition};
-  border-left: 2px solid ${colors.darkGrey};
-  text-align: left;
-  white-space: nowrap;
-  font-family: ${fonts.SFMono};
-  font-size: ${fontSizes.smallish};
-  color: ${props => (props.isActive ? colors.nichijousalmon : colors.pbeige)};
-  ${media.tablet`padding: 0 15px 2px;`};
-  ${media.thone`
-    ${mixins.flexCenter};
-    padding: 0 15px;
-    text-align: center;
-    border-left: 0;
-    border-bottom: 2px solid ${colors.darkGrey};
-    min-width: 120px;
-  `};
-  &:hover,
-  &:focus {
-    background-color: ${colors.pteal};
-  }
-`;
-const Highlighter = styled.span`
-  display: block;
-  background: ${colors.nichijousalmon};
-  width: 2px;
-  height: ${theme.tabHeight}px;
-  border-radius: ${theme.borderRadius};
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition-delay: 0.1s;
-  z-index: 10;
-  transform: translateY(
-    ${props => (props.activeTabId > 0 ? props.activeTabId * theme.tabHeight : 0)}px
-  );
-  ${media.thone`
-    width: 100%;
-    max-width: ${theme.tabWidth}px;
-    height: 2px;
-    top: auto;
-    bottom: 0;
-    transform: translateX(
-      ${props => (props.activeTabId > 0 ? props.activeTabId * theme.tabWidth : 0)}px
-    );
-    margin-left: 50px;
-  `};
-  ${media.phablet`
-    margin-left: 25px;
-  `};
-`;
 const ContentContainer = styled.div`
   position: relative;
   padding-top: 12px;
@@ -176,19 +82,19 @@ const JobDetails = styled.h5`
 `;
 
 const Performance = ({ data }) => {
-  const [activeTabId, setActiveTabId] = useState(0);
+  const [activeTabId] = useState(0);
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
 
   return (
     <JobsContainer id="performance" ref={revealContainer}>
-      <Heading>My music performances</Heading>
+      <Heading>Some of My Music Performances</Heading>
       <TabsContainer>
         <ContentContainer>
           {data &&
             data.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { title, url, range } = frontmatter;
               return (
                 <TabContent
                   key={i}
