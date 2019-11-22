@@ -118,6 +118,7 @@ const ContentContainer = styled.div`
   padding-top: 12px;
   padding-left: 30px;
   flex-grow: 1;
+  border-color: transparent;
   ${media.tablet`padding-left: 20px;`};
   ${media.thone`padding-left: 0;`};
 `;
@@ -154,13 +155,8 @@ const TabContent = styled.div`
     ${mixins.inlineLink};
   }
 `;
-const JobTitle = styled.h4`
-  color: ${colors.lightestSlate};
-  font-size: ${fontSizes.xxlarge};
-  font-weight: 500;
-  margin-bottom: 5px;
-`;
-const Company = styled.span`
+
+const Company = styled.h3`
   color: ${colors.green};
 `;
 const JobDetails = styled.h5`
@@ -209,7 +205,7 @@ const Courseworks = ({ data }) => {
           {data &&
             data.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const {url, company, range } = frontmatter;
+              const { url, company, range } = frontmatter;
               return (
                 <TabContent
                   key={i}
@@ -219,14 +215,12 @@ const Courseworks = ({ data }) => {
                   tabIndex="0"
                   aria-labelledby={`job${i}`}
                   aria-hidden={activeTabId !== i}>
-                  <JobTitle>
-                    <Company>
-                      <span>&nbsp;</span>
-                      <a href={url} target="_blank" rel="nofollow noopener noreferrer">
-                        {company}
-                      </a>
-                    </Company>
-                  </JobTitle>
+                  <Company>
+                    <span>&nbsp;</span>
+                    <a href={url} target="_blank" rel="nofollow noopener noreferrer">
+                      {company}
+                    </a>
+                  </Company>
                   <JobDetails>
                     <span>{range}</span>
                   </JobDetails>

@@ -24,7 +24,7 @@ const NavContainer = styled.header`
   width: 100%;
   height: ${props => (props.scrollDirection === 'none' ? theme.navHeight : theme.navScrollHeight)};
   box-shadow: ${props =>
-    props.scrollDirection === 'up' ? `0 10px 30px -10px ${colors.pbeige}` : 'none'};
+    props.scrollDirection === 'up' ? `0 10px 30px -10px ${colors.shadowNavy}` : 'none'};
   transform: translateY(
     ${props => (props.scrollDirection === 'down' ? `-${theme.navScrollHeight}` : '0px')}
   );
@@ -51,7 +51,7 @@ const LogoLink = styled.a`
   &:hover,
   &:focus {
     svg {
-      fill: ${colors.pyellow};
+      fill: ${colors.shadowNavy};
     }
   }
   svg {

@@ -118,7 +118,7 @@ const mixins = {
   `,
 
   boxShadow: css`
-    box-shadow: 0 10px 30px -15px ${colors.plightyellow};
+    box-shadow: 0 10px 30px -15px ${colors.darkNavy};
     transition: ${theme.transition};
 
     &:hover,
