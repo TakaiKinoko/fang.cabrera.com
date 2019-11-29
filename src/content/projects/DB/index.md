@@ -2,8 +2,8 @@
 date: '2019-10'
 title: 'Miniature Database Implementation'
 image: ''
-github: ''
-external: ''
+github: 'https://github.com/TakaiKinoko/PeachyDB'
+external: 'https://github.com/TakaiKinoko/PeachyDB'
 tech:
   - Java
 show: 'true'
