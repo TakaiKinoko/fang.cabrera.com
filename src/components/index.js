@@ -13,6 +13,7 @@ import Nav from './nav';
 import Projects from './projects';
 import Social from './social';
 import Performance from './performance';
+import Blog from './blog';
 
 export {
   About,
@@ -30,4 +31,5 @@ export {
   Projects,
   Social,
   Performance,
+  Blog,
 };

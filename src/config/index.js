@@ -40,6 +40,10 @@ module.exports = {
       url: '/#performance',
     },
     {
+      name: 'Blog',
+      url: '/#blog',
+    },
+    {
       name: 'Contact',
       url: '/#contact',
     },

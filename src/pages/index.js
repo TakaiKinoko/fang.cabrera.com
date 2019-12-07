@@ -10,6 +10,7 @@ import {
   Projects,
   Contact,
   Performance,
+  Blog,
 } from '@components';
 import styled from 'styled-components';
 import { mixins, Main } from '@styles';
@@ -28,6 +29,7 @@ const IndexPage = ({ location, data }) => (
       <Featured data={data.featured.edges} />
       <Projects data={data.projects.edges} />
       <Performance data={data.performance.edges} />
+      <Blog data={data.blog.edges} />
       <Contact data={data.contact.edges} />
     </MainContainer>
   </Layout>
@@ -139,6 +141,24 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
+          }
+          html
+        }
+      }
+    }
+    blog: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/blog/" } }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            avatar {
+              childImageSharp {
+                fluid(maxWidth: 700, quality: 90, traceSVG: { color: "#64ffda" }) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+            skills
           }
           html
         }
