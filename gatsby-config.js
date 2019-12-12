@@ -53,7 +53,7 @@ module.exports = {
             },
           },
           {
-            resolve: "gatsby-remark-embed-video", //https://github.com/borgfriend/gatsby-remark-embed-video
+            resolve: 'gatsby-remark-embed-video', //https://github.com/borgfriend/gatsby-remark-embed-video
             options: {
               width: 600,
               ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
@@ -63,18 +63,18 @@ module.exports = {
               urlOverrides: [
                 {
                   id: 'youtube',
-                  embedURL: (videoId) => `https://www.youtube-nocookie.com/embed/${videoId}`,
-                }
-              ] //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
-            }
-          }
+                  embedURL: videoId => `https://www.youtube-nocookie.com/embed/${videoId}`,
+                },
+              ], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
+            },
+          },
         ],
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: config.googleAnalyticsID,
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'none', // set in netlify // see https://aiki-developer.com/blog/gatsby-google-analytics
       },
     },
   ],
