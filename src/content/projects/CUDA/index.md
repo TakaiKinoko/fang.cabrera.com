@@ -2,8 +2,8 @@
 date: '2019-12-18'
 title: 'Quantifying the Relationship Between Occupancy and Performance On CUDA'
 cover: ''
-github: 'https://github.com/TakaiKinoko/Quantifying-the-Relationship-Between-Occupancy-and-Performance-On-CUDA'
-external: 'https://github.com/TakaiKinoko/Quantifying-the-Relationship-Between-Occupancy-and-Performance-On-CUDA'
+github: 'https://github.com/TakaiKinoko/Quantifying-the-Relationship-Between-Occupancy-and-Performance-On-CUDA/blob/master/Report.pdf'
+external: 'https://github.com/TakaiKinoko/Quantifying-the-Relationship-Between-Occupancy-and-Performance-On-CUDA/blob/master/Report.pdf'
 tech:
   - CUDA
   - Nsight Compute

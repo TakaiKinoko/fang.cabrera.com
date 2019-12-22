@@ -5,7 +5,7 @@ module.exports = {
   siteKeywords: 'Fang Cabrera, TakaiKinoko, software engineer, NYU, Courant',
   siteUrl: 'https://fangcabrera.com',
   siteLanguage: 'en_US',
-  googleAnalyticsID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'none',
+  //googleAnalyticsID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
   //googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
   name: 'Fang Cabrera',
   location: 'New York, NY',
