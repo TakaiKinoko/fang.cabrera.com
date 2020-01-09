@@ -11,6 +11,4 @@ tech:
 show: 'true'
 ---
 
-_(In Progress)_
-
 Language style transfer is the task of generating a new sentence that preserves the content of the source sentence while emulating the style of a target domain. It is an important component of natural language generation that facilitates many NLP applications.

@@ -1,13 +1,13 @@
 ---
-date: '2019-12-18'
+date: '2'
 title: 'Quantifying the Relationship Between Occupancy and Performance On CUDA'
-cover: ''
+cover: './data.png'
 github: 'https://github.com/TakaiKinoko/Quantifying-the-Relationship-Between-Occupancy-and-Performance-On-CUDA/blob/master/Report.pdf'
 external: 'https://github.com/TakaiKinoko/Quantifying-the-Relationship-Between-Occupancy-and-Performance-On-CUDA/blob/master/Report.pdf'
 tech:
   - CUDA
   - Nsight Compute
-show: 'false'
+show: 'true'
 ---
 
 Occupancy is an important metric on Streaming Multiprocessor utilization in CUDA. Low occupancy oftentimes results in poor performance, but it remains unclear if occupancy always correlates with performance positively.
